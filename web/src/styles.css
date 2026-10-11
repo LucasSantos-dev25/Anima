@@ -1,3 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+
+@theme {
+  --color-bg: #faf8f5;
+  --color-surface: #ffffff;
+  --color-ink: #2b2b2b;
+  --color-ink-muted: #6b6b6b;
+  --color-primary: #6a8d73;
+  --color-primary-contrast: #ffffff;
+  --color-danger: #b5483a;
+  --radius-card: 12px;
+}
+
+@layer base {
+  body { @apply bg-bg text-ink; }
+}
